@@ -4,3 +4,6 @@ client/node_modules/
 
 #react build
 client/build/
+
+#transpiled ts code
+server/dist
