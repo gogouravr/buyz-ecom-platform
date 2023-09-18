@@ -1,8 +1,11 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import { healthRouter } from './api/controllers/health.controller';
 
+
+dotenv.config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const v1_BASE_PATH = '/api/v1';
 

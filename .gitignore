@@ -7,3 +7,6 @@ client/build/
 
 #transpiled ts code
 server/dist
+
+#.env file
+server/.env
