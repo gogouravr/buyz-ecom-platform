@@ -3,6 +3,7 @@ CREATE TABLE vendor.products (
     product_id UUID DEFAULT gen_random_uuid() NOT NULL,
     variant_id UUID DEFAULT gen_random_uuid() NOT NULL,
     product_name VARCHAR(255) NOT NULL,
+    image_url TEXT,
     description TEXT,
     price DECIMAL(10, 2) NOT NULL,
     stock_quantity INT NOT NULL,
