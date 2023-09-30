@@ -8,6 +8,7 @@ CREATE TABLE shopper.shoppers (
     accepts_email_marketing BOOLEAN,
     accepts_sms_marketing BOOLEAN,
     country VARCHAR(50),
+    tags TEXT,
     updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW(),
     created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
 );
