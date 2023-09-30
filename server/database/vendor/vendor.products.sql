@@ -8,6 +8,7 @@ CREATE TABLE vendor.products (
     price DECIMAL(10, 2) NOT NULL,
     stock_quantity INT NOT NULL,
     category VARCHAR(50),
+    custom_props JSON,
     updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW(),
     created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW(),
     PRIMARY KEY (product_id, variant_id)
