@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/swagger-ui-express": "^4.1.6",
     "@types/winston": "^2.4.4",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
