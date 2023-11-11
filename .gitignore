@@ -6,7 +6,7 @@ client/node_modules/
 client/build/
 
 #transpiled ts code
-server/dist
+dist
 
 #.env file
-server/.env
+.env
