@@ -22,7 +22,8 @@
     "pg": "^8.11.3",
     "sequelize-typescript": "^2.1.5",
     "swagger-ui-express": "^5.0.0",
-    "winston": "^3.10.0"
+    "winston": "^3.10.0",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
