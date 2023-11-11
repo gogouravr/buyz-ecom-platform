@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: buyz
+  description: E-commerce platform
+  version: 1.0.0
+tags:
+- name: Health
+    description: Health Check heartbeat
+paths:
+  /api/v1/health:
+    get:
+      summary: Get example data
+      responses:
+        '200':
+          description: Successful response
