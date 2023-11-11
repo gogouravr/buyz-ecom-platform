@@ -16,7 +16,7 @@ const v1_BASE_PATH = '/api/v1';
 app.use(v1_BASE_PATH, healthRouter);
 
 // Load Swagger YAML file
-const swaggerFilePath = path.join(__dirname, 'api', 'swagger.yaml');
+const swaggerFilePath = path.join(__dirname, '../src/api', 'swagger.yaml');
 const swaggerDocument = yaml.load(swaggerFilePath);
 // Serve swagger doc
 app.use('/api-docs', swaggerUi.serve);
