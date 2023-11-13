@@ -13,3 +13,73 @@ paths:
       responses:
         '200':
           description: Successful response
+  paths:
+  /api/v1/product:
+     post:
+      summary: 'Create a new product'
+      requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/Product'
+      responses:
+        '201':
+          description: 'Product created successfully'
+          schema:
+            $ref: '#/definitions/Product'
+
+
+definitions:
+  Product:
+    type: 'object'
+    properties:
+      product_id:
+        type: 'string'
+        format: 'uuid'
+      variant_id:
+        type: 'string'
+        format: 'uuid'
+      product_name:
+        type: 'string'
+      image_url:
+        type: 'string'
+      description:
+        type: 'string'
+      price:
+        type: 'number'
+        format: 'float'
+      stock_quantity:
+        type: 'integer'
+      category:
+        type: 'string'
+      custom_props:
+        type: 'object'
+      updated_at:
+        type: 'string'
+        format: 'date-time'
+      created_at:
+        type: 'string'
+        format: 'date-time'
+    required:
+      - product_id
+      - variant_id
+      - product_name
+      - price
+      - stock_quantity
+      - updated_at
+      - created_at
+    example:
+      product_id: 'a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6'
+      variant_id: 'a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p7'
+      product_name: 'Example Product'
+      image_url: 'https://example.com/product-image.jpg'
+      description: 'This is an example product description.'
+      price: 49.99
+      stock_quantity: 100
+      category: 'Electronics'
+      custom_props:
+        key1: 'value1'
+        key2: 'value2'
+      updated_at: '2023-01-01T12:00:00Z'
+      created_at: '2023-01-01T12:00:00Z'
