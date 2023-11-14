@@ -10,7 +10,8 @@
     "dev": "nodemon src/index.ts",
     "start": "node dist/index.js",
     "client.dev": "cd client && npm run start",
-    "client.build": "cd client && npm run build"
+    "client.build": "cd client && npm run build",
+    "prod": "tsc && pm2 start dist/index.js"
   },
   "keywords": [],
   "author": "",
