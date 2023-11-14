@@ -23,6 +23,7 @@
         ],
         "react/jsx-indent": "off",
         "react/jsx-indent-props": "off",
-        "indent": "off"
+        "indent": "off",
+        "import/no-extraneous-dependencies": "off"
     }
 }
