@@ -16,16 +16,13 @@
         "quotes": [
             "error",
             "single"
-        ]
-    },
-    "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-            "js": "never",
-            "mjs": "never",
-            "jsx": "never",
-            "scss": "never"
-        }
-    ]
+        ],
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ],
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "indent": "off"
+    }
 }
