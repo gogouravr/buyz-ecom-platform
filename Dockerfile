@@ -10,11 +10,15 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+#Install global dependency for pm2
+RUN npm install pm2 -g
+
 # Copy the rest of the application code to the working directory
 COPY . .
 
 # Expose the port your app runs on
 EXPOSE 3030
 
+
 # Define the command to run your app
-CMD ["npm", "run", "start"]
+CMD [ "pm2-runtime", "npm", "--", "start" ]
