@@ -1,0 +1,17 @@
+.global-search {
+    display: flex;
+
+    .global-search__input {
+        height: 2rem;
+        width: 40vw;
+        border: #fff;
+        border-radius: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 1rem;
+    }
+
+    button {
+        display: inline-block;
+        border-radius: 1px 1px 1px 0;
+    }
+}
