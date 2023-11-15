@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  # PostgreSQL service
+  buyz-postgres-db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_PASSWORD=gouravdev
+      - POSTGRES_USER=gourav
+      - POSTGRES_DB=buyz
+    ports:
+      - 5432:5432
+
+  # Node.js service
+  buyz-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3030:3030
+    env_file:
+      - .env
+    depends_on:
+      - buyz-postgres-db
