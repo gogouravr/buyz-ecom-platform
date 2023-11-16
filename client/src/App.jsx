@@ -1,13 +1,23 @@
 import React from 'react';
-import Navbar from './components/navbar/Navbar';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+
+import Home from './pages/Home';
+import Error from './pages/Error';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+      errorElement: <Error />
+    },
+  ]);
+
   return (
-    <div>
-      <header>
-        <Navbar />
-      </header>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
