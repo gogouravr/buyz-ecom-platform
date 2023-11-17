@@ -70,8 +70,6 @@ definitions:
       - updated_at
       - created_at
     example:
-      product_id: 'a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6'
-      variant_id: 'a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p7'
       product_name: 'Example Product'
       image_url: 'https://example.com/product-image.jpg'
       description: 'This is an example product description.'
@@ -81,5 +79,3 @@ definitions:
       custom_props:
         key1: 'value1'
         key2: 'value2'
-      updated_at: '2023-01-01T12:00:00Z'
-      created_at: '2023-01-01T12:00:00Z'
