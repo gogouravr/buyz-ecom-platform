@@ -1,16 +1,8 @@
-import { Get, JsonController } from 'routing-controllers';
+import express, { Request, Response } from 'express';
+const router = express.Router();
 
-// router.get('/health', (req: Request, res: Response) => {
-//     res.json({ status: 'OK!' });
-// });
+router.get('/health', (req: Request, res: Response) => {
+    res.json({ status: 'OK!' });
+});
 
-@JsonController('/health')
-export class HealthController {
-    @Get()
-    get() {
-        return {
-            'status': 'OK!'
-        };
-    }
-}
-
+export const healthRouter = router;

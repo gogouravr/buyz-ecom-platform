@@ -9,7 +9,9 @@ import { useExpressServer } from 'routing-controllers';
 import database from './database';
 
 //import routers
-import { HealthController, ProductController } from './api/controllers';
+import { ProductController } from './api/controllers';
+
+
 
 dotenv.config();
 
@@ -26,11 +28,14 @@ const swaggerDocument = yaml.load(swaggerFilePath);
 app.use('/api-docs', swaggerUi.serve);
 app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
+
+
+
 // Routes
 const v1_BASE_PATH = '/api/v1';
 useExpressServer(app, {
   routePrefix: v1_BASE_PATH,
-  controllers: [ProductController, HealthController], // we specify controllers we want to use
+  controllers: [ProductController], // we specify controllers we want to use
 });
 
 app.listen(port, async () => {
