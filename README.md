@@ -30,21 +30,24 @@ To get started with Buyz E-commerce Platform, follow these steps:
    ```bash
    git clone https://github.com/yourusername/buyz-ecom-platform.git
    ```
+
 2. **Install backend dependencies and run the development server**
-    ```
-    cd server
-    npm install
-    npm run dev
-    ```
-    The server will be served on port 3000 by default.
+
+   ```
+   cd server
+   npm install
+   npm run dev
+   ```
+
+   The server will be served on port 3000 by default.
 
 3. **Install frontend dependencies and run the development server**
-    ```
-    cd client
-    npm install
-    npm run start
-    ```
-    The server will be served on port 3000 by default.
+   ```
+   cd client
+   npm install
+   npm run start
+   ```
+   The server will be served on port 3000 by default.
 
 ## Usage
 
@@ -52,8 +55,8 @@ Vendor: Create a vendor account, list your products, and manage your listings th
 Buyer: Create a buyer account, browse products, add items to your cart, and complete purchases securely.
 Admin: Access the admin panel to manage user accounts, monitor transactions, and ensure the platform's integrity.
 
-
 ## Contributing
+
 I welcome contributions from the community to improve Buyz E-commerce Platform. To contribute:
 
 1. Fork the repository.
@@ -62,5 +65,5 @@ I welcome contributions from the community to improve Buyz E-commerce Platform. 
 4. Submit a pull request explaining your changes and the problem they solve.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
+This project is licensed under the MIT License - see the LICENSE file for details.

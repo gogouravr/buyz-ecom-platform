@@ -10,14 +10,12 @@ import database from './database';
 //import routers
 import { healthRouter, productRouter } from './api/controllers';
 
-
-
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-// middleware to parse incoming JSON payloads. 
+// middleware to parse incoming JSON payloads.
 app.use(express.json());
 
 // Load Swagger YAML file
@@ -26,9 +24,6 @@ const swaggerDocument = yaml.load(swaggerFilePath);
 // Serve swagger doc
 app.use('/api-docs', swaggerUi.serve);
 app.get('/api-docs', swaggerUi.setup(swaggerDocument));
-
-
-
 
 // Routes
 const v1_BASE_PATH = '/api/v1';

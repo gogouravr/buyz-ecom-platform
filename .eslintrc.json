@@ -1,25 +1,14 @@
 {
-    "plugins": [
-        "@typescript-eslint/eslint-plugin",
-        "eslint-plugin-tsdoc"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
-    },
-    "rules": {
-        "@typescript-eslint/no-explicit-any": "off",
-        "semi": [
-            "error",
-            "always"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ]
-    }
+  "plugins": ["@typescript-eslint/eslint-plugin", "eslint-plugin-tsdoc"],
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"]
+  }
 }

@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Error from './pages/Error';
@@ -12,13 +9,11 @@ function App() {
     {
       path: '/',
       element: <Home />,
-      errorElement: <Error />
+      errorElement: <Error />,
     },
   ]);
 
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
