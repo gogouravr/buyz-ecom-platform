@@ -1,5 +1,5 @@
 import React from 'react';
-import 'Catalog.scss';
+import './Catalog.scss';
 
 export default function Catalog() {
     return (
