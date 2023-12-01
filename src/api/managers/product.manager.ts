@@ -1,3 +1,5 @@
+/** @format */
+
 import { Product } from '../../models';
 
 class ProductManager {

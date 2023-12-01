@@ -1,3 +1,5 @@
+/** @format */
+
 import { createLogger, format, transports } from 'winston';
 
 const logger = createLogger({
@@ -7,12 +9,12 @@ const logger = createLogger({
     format.timestamp(),
     format.printf(({ timestamp, level, message }) => {
       return `${timestamp} [${level}]: ${message}`;
-    }),
+    })
   ),
   transports: [
-    new transports.Console(),
+    new transports.Console()
     // Add other transports here (e.g., file transport)
-  ],
+  ]
 });
 
 export default logger;

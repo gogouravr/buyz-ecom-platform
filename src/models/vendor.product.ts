@@ -1,3 +1,5 @@
+/** @format */
+
 import {
   Table,
   Column,
@@ -7,7 +9,7 @@ import {
   Unique,
   Default,
   AutoIncrement,
-  AllowNull,
+  AllowNull
 } from 'sequelize-typescript';
 
 @Table({ schema: 'vendor', tableName: 'products' })

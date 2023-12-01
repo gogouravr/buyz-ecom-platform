@@ -1,3 +1,5 @@
+/** @format */
+
 import { Sequelize, SequelizeOptions } from 'sequelize-typescript';
 import dotenv from 'dotenv';
 
@@ -16,10 +18,10 @@ const sequelizeOptions: SequelizeOptions = {
   port: Number(DATABASE_PORT), // Replace with your PostgreSQL port if necessary
   models: Object.values(models),
   define: {
-    timestamps: false, // Disable timestamps for all models
+    timestamps: false // Disable timestamps for all models
   },
   dialect: 'postgres', // Specify the database dialect
-  logging: true, // Set to true to enable logging
+  logging: true // Set to true to enable logging
 };
 
 export default new Sequelize(sequelizeOptions);

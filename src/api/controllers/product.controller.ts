@@ -1,3 +1,5 @@
+/** @format */
+
 import express, { Request, Response } from 'express';
 
 import { productManager } from '../managers';
