@@ -1,0 +1,11 @@
+# ymal file
+src/api/swagger.yaml
+
+
+# Ignore readme files
+README.md
+client/README.md
+
+
+# Ignore dist
+/dist
