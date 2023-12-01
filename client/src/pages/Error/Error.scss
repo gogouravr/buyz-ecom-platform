@@ -1,11 +1,13 @@
+/** @format */
+
 .error-block {
-    .error-block__error-text {
-        margin-top: 150px;
-        color: rgb(29, 176, 58);
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: 300;
-    }
+  .error-block__error-text {
+    margin-top: 150px;
+    color: rgb(29, 176, 58);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+  }
 }

@@ -8,17 +8,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "semi": [
-      "warn",
-      "always"
-    ],
-    "quotes": [
-      "warn",
-      "single"
-    ],
-    "jsx-quotes": [
-      "warn",
-      "prefer-single"
-    ]
+    "semi": ["warn", "always"],
+    "quotes": ["warn", "single"],
+    "jsx-quotes": ["warn", "prefer-single"]
   }
 }

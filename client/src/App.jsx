@@ -1,3 +1,5 @@
+/** @format */
+
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -11,11 +13,13 @@ function App() {
       path: '/',
       element: <Home />,
       errorElement: <Error />,
-      children: [{
-        path: 'catalog',
-        element: <Catalog />
-      }]
-    },
+      children: [
+        {
+          path: 'catalog',
+          element: <Catalog />
+        }
+      ]
+    }
   ]);
 
   return <RouterProvider router={router} />;
