@@ -2,13 +2,15 @@
 
 import React, { useEffect } from 'react';
 import './Catalog.scss';
+import axios from 'axios';
 
 export default function Catalog() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        console.log('here');
         const res = await axios({
-          method: 'post',
+          method: 'get',
           url: '/api/v1/product/all'
         });
         console.log(res);
